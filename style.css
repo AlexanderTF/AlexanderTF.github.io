@@ -1,0 +1,277 @@
+﻿body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.banner-head {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url("beaver_lake.jpg");
+    /* Set a specific height */
+    height: 51%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#banner-text {
+    left:-4%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    color: snow;
+    border-radius: 1%;
+    opacity: 0.75;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.hero-text {
+    font-family: Arial;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+/* ----------------------------------- PROFILE CARD ----------------------------------------*/
+#profile {
+    background-color: #9FBCBF;
+}
+
+.side-profiles-back {
+    background-color: #9FBCBF;
+}
+
+.side-profile {
+    position: relative;
+    padding-top: 2%;
+    background-color: #9FBCBF;
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 1%;
+    background-color: snow;
+}
+
+.cards img{
+    border-radius: 1%;
+    padding-top: 2%;
+    padding-bottom:2%;
+    max-width: 30%;
+    height: auto;
+}
+
+.title {
+    color: grey;
+    font-size: 12px;
+}
+
+.cards h1{
+    font-size:31px;
+}
+
+.cards a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.in-flex-container{
+    display: flex;
+    flex-direction:column;
+    padding-left:10px;
+    padding-top: 10px;
+}
+
+.in-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.in-flex-container a {
+    font-size: 13px;
+}
+.in-flex-container a:link{
+    text-decoration: underline;
+}
+.in-flex-container a:hover {
+    color: tomato;
+}
+
+.in-flex-container2 a{
+    text-align: left;
+    font-size:13px;
+    color: cornflowerblue;
+}
+
+
+/* ----------------------------------- TITLE LINES ----------------------------------------*/
+#projects {
+    background-color: snow;
+}
+
+
+/* ----------------------------------- TITLE LINES -----------------------------------------*/
+/* The h1's container */
+#opac1 {
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+}
+
+h2::before, h2::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -120px;
+    width: 100px; /* 100px line on either side */
+    border-bottom: 1px solid lightgray;
+}
+
+h2::after {
+    left: auto;
+    right: -120px; /* make the "after" position on the right side of the h1 */
+}
+
+/* ------------------------ PROJECTS SECTION ------------------------*/
+.heading-container {
+    text-align: center;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+.credit {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.credit a {
+    color: inherit;
+}
+
+a,
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+a::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.main-container {
+    padding: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+/*.card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+}
+*/
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+.card-1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+@media (max-width: 1600px) {
+    .card-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 780px){
+    .cards{
+        margin:10px;
+    }
+}
